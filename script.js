@@ -45,19 +45,19 @@ totalSalary += salary;
 monSalary = totalSalary / 12;
 
 console.log(monSalary);
-
+salaryList();
 }
 //show total salary on the dom. not currently working ** ask for help
+
+};
+
 var salaryList = function(){
   document.getElementById("output2").innerHTML = "";
   for( var i = 0; i< employeeList.length; i++ ){
-    var salDisplay = "Total Salary= " + totalSalary;
+    var salDisplay = "Total Salary= " + totalSalary + " & Monthly Salary= " + monSalary; 
     document.getElementById("output2").innerHTML += '<p>' + salDisplay + '</p>';
   }
 };
-};
-
-
 
 addSalary();
 // var salaryList = function(){
